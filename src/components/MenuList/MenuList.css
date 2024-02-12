@@ -1,0 +1,15 @@
+ svg {
+    path{
+        fill: rgb(6, 17, 120);
+    }
+}
+
+ .menu-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 18px;
+}
+

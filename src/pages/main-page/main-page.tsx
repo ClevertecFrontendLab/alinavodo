@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import './main-page.css';
 
-export const MainPage: React.FC = () => {
+import { MainPageLayouts } from '@components/MainPageLayouts/MainPageLayouts';
 
+export const MainPage: React.FC = () => {
     return (
-        <>
-        </>
-    );
+    <MainPageLayouts/>
+    )
 };
