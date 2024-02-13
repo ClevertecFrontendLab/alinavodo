@@ -1,0 +1,14 @@
+.ant-card-head  {
+    /* height: 45px; */
+}
+
+.ant-card-head-title {
+    white-space: normal;
+    /* text-align: left; */
+}
+
+.ant-card-body {
+    display: block;
+    gap :10px;
+}
+

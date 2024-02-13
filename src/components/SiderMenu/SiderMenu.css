@@ -1,3 +1,4 @@
+
 .ant-layout.ant-layout-has-sider .sider {
     display: flex;
     flex-direction: column;
@@ -22,7 +23,7 @@ svg {
     }
 }
 
- .menu-bar {
+.menu-bar {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -30,5 +31,12 @@ svg {
     width: 100%;
     gap: 18px;
 }
+
+
+/* .ant-layout.ant-layout-has-sider {
+    background: no-repeat center url(/alinavodo/src/components/MainPageLayouts/wrapper.jpg) ;
+    background-size: cover;
+
+} */
 
 

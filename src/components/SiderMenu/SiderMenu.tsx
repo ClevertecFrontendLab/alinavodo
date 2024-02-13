@@ -14,7 +14,16 @@ import {setTwoToneColor } from '@ant-design/icons';
 
 const { Sider } = Layout;
 
-export const SiderMenu: React.FC = ( ) => {
+
+import Exit from '../BtnExit/Exit.svg'
+
+//  interface SiderMenuProps  {
+//     windowWidth: number,
+//     // paginate: (arg: number) => void
+// }
+
+
+export const SiderMenu: React.FC = () => {
     const [collapsed, setCollapsed] = useState(false);
     const [windowWidth, setWindowWidth] = useState<number>(1440);
     const resizeHandler = () => {
@@ -28,6 +37,7 @@ export const SiderMenu: React.FC = ( ) => {
     }, []);
 
     setTwoToneColor('rgb(6, 17, 120)');
+
 
     return (
         <Sider style={{ zIndex: `${windowWidth > 576 ? '0' : '1'}`, position: `${windowWidth > 360 ? 'relative' : 'fixed'}` }}
@@ -55,9 +65,18 @@ export const SiderMenu: React.FC = ( ) => {
                     <Menu.Item key="card" icon={windowWidth > 576 ? <IdcardOutlined style={{color: 'rgb(6, 17, 120)'}} /> : ''}>Профиль</Menu.Item>
                 </Menu>
             </div>
-            <BtnExit/>
+            {/* <BtnExit windowWidth={windowWidth}/> */}
+            <Menu>
+            <Menu.Item key="exit"
+        icon={windowWidth > 576 ? <img src={Exit} width='16px'></img> : '' }
+            // icon={<img src={Exit} width='16px'></img> }
+            style={{display: 'flex', justifyContent: 'start', gap: '17px' }}
+
+            >   Выход
+            </Menu.Item>
+       </Menu>
       </Sider>
     )
 }
 
-// {<CalendarTwoTone  style={{color: 'rgb(6, 17, 120)', fill: 'rgb(6, 17, 120)'}}/>}
+
